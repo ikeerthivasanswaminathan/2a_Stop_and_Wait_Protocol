@@ -39,7 +39,7 @@ while True:
 
 ![client](https://github.com/ikeerthivasanswaminathan/2a_Stop_and_Wait_Protocol/assets/148937372/f7d14c49-a44d-4d83-ae06-ea607ef47e97)
 
-**server.py**
+**server output**
 
 ![server](https://github.com/ikeerthivasanswaminathan/2a_Stop_and_Wait_Protocol/assets/148937372/68c6318f-4921-404b-b8b3-f5f5be85a6aa)
 
