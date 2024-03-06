@@ -17,10 +17,19 @@ To write a python program to perform stop and wait protocol
 ```
 import socket
 s=socket.socket()
-s.connect(('localhost',8000))
+s.bind(('localhost',8000))
+s.listen(5)
+c,addr=s.accept()
 while True:
-    print(s.recv(1024).decode())
-    s.send("Acknowledgement Recived".encode())
+    i=input("Enter a data: ")
+    c.send(i.encode())
+    ack=c.recv(1024).decode()
+    if ack:
+        print(ack)
+        continue
+    else:
+        c.close()
+        break
 ```
 
 **server.py**
